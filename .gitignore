@@ -1,0 +1,11 @@
+﻿venv/
+__pycache__/
+*.pyc
+.env
+gcp-key.json
+chroma_db/
+*.pdf
+.git/
+frontend/node_modules/
+frontend/dist/
+backend/chroma_db/
