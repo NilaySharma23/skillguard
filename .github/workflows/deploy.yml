@@ -1,0 +1,48 @@
+name: Deploy SkillGuard AI
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Build React frontend
+        run: |
+          cd frontend
+          npm install
+          npm run build
+
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v2
+        with:
+          credentials_json: ${{ secrets.GCP_SA_KEY }}
+
+      - name: Configure Docker for GCP
+        run: gcloud auth configure-docker us-central1-docker.pkg.dev --quiet
+
+      - name: Build and push Docker image
+        run: |
+          docker build -t us-central1-docker.pkg.dev/skillgaurd-ai/skillguard/skillguard-ai:latest .
+          docker push us-central1-docker.pkg.dev/skillgaurd-ai/skillguard/skillguard-ai:latest
+
+      - name: Deploy to Cloud Run
+        run: |
+          gcloud run deploy skillguard-ai \
+            --image us-central1-docker.pkg.dev/skillgaurd-ai/skillguard/skillguard-ai:latest \
+            --platform managed \
+            --region us-central1 \
+            --allow-unauthenticated \
+            --memory 2Gi \
+            --timeout 120 \
+            --quiet
