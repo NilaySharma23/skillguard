@@ -11,6 +11,8 @@ Resume text:
 Return ONLY valid JSON in exactly this format, nothing else:
 {{
   "candidate_name": "string",
+  "github_username": "string or null if not found",
+  "github_url": "string or null if not found",
   "skills": ["skill1", "skill2"],
   "experience": [
     {{
