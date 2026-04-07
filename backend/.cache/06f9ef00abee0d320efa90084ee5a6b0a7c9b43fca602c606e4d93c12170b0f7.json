@@ -1,0 +1,714 @@
+{
+  "parsed_claims": {
+    "candidate_name": "Nilay Sharma",
+    "github_username": "NilaySharma23",
+    "github_url": "https://github.com/NilaySharma23",
+    "skills": [
+      "Python",
+      "SQL",
+      "JavaScript",
+      "HTML/CSS",
+      "TensorFlow",
+      "PyTorch",
+      "scikit-learn",
+      "Keras",
+      "OpenCV",
+      "Deep Learning",
+      "NLP",
+      "Neural Networks",
+      "RAG",
+      "LangChain",
+      "LangGraph",
+      "CrewAI",
+      "Prompt Engineering",
+      "ETL Pipelines",
+      "Data Modeling",
+      "Data Warehousing",
+      "PySpark",
+      "Databricks",
+      "Pandas",
+      "NumPy",
+      "React.js",
+      "REST APIs",
+      "Flask",
+      "MySQL",
+      "Google Cloud Platform",
+      "Firebase",
+      "Git",
+      "VS Code",
+      "Jupyter Notebook",
+      "Postman"
+    ],
+    "experience": [
+      {
+        "company": "Vega Visionary Training FZE",
+        "role": "AI Intern",
+        "duration": "Nov 2025 \u2013 Present",
+        "claims": [
+          "Developed and refined prompt engineering strategies to improve output quality, reasoning accuracy, and consistency",
+          "Built automated content generation systems using AI models with structured rules, constraints, and validation logic",
+          "Performed iterative testing and evaluation to enhance model performance through prompt tuning and feedback loops",
+          "Collaborated on scalable AI solutions for educational and content-driven applications"
+        ]
+      },
+      {
+        "company": "The Skill Guru Foundation",
+        "role": "Lead AI Dev Intern",
+        "duration": "Nov 2025 \u2013 Jan 2026",
+        "claims": [
+          "Led development of AI-driven solutions to support NGO operations and social initiatives",
+          "Applied machine learning and data analysis techniques to derive actionable insights",
+          "Built data pipelines, model prototypes, and reports to improve operational efficiency and outreach"
+        ]
+      },
+      {
+        "company": "ICEM, Pune",
+        "role": "Data Scientist Intern",
+        "duration": "Jan 2025 \u2013 Feb 2025",
+        "claims": [
+          "Designed data pipelines and performed analytics using Pandas, NumPy, and MySQL",
+          "Analyzed large datasets for housing and market basket analysis projects",
+          "Worked on ETL workflows, feature engineering, and data visualization"
+        ]
+      }
+    ],
+    "projects": [
+      {
+        "name": "Fraud Detection System",
+        "tech_stack": [
+          "Python",
+          "Scikit-learn",
+          "Pandas",
+          "NumPy"
+        ],
+        "claims": [
+          "Built ML-based fraud detection system on financial transaction data",
+          "Implemented Random Forest & Isolation Forest for supervised and anomaly detection",
+          "Engineered features based on transaction behavior (amount, time, user patterns)",
+          "Built interactive dashboards (Seaborn/Matplotlib) for insights and reporting"
+        ]
+      },
+      {
+        "name": "Algo-Trading System with ML & Automation",
+        "tech_stack": [
+          "Python",
+          "yfinance",
+          "Pandas",
+          "NumPy",
+          "TA-Lib",
+          "Scikit-learn",
+          "Backtrader"
+        ],
+        "claims": [
+          "Built end-to-end algorithmic trading system using real-time and historical stock data (Yahoo Finance API)",
+          "Backtested strategies over 6 months with automated buy/sell signals and portfolio analytics (P&L, win ratio)",
+          "Integrated ML models (Logistic Regression, Decision Tree) using RSI, MACD, and volume indicators",
+          "Automated trade logging to Google Sheets and implemented Telegram alerts for real-time signals"
+        ]
+      },
+      {
+        "name": "Olympic Image Recognition System",
+        "tech_stack": [
+          "Python",
+          "PyTorch",
+          "OpenCV"
+        ],
+        "claims": [
+          "Created custom dataset of 220 images across 11 classes with structured preprocessing & augmentation",
+          "Developed CNN-based deep learning model for image classification",
+          "Focused on data integrity, preprocessing pipelines, and model accuracy improvement"
+        ]
+      },
+      {
+        "name": "Online Shopping System (Full-Stack)",
+        "tech_stack": [
+          "Flask",
+          "MySQL",
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ],
+        "claims": [
+          "Built full-stack web application with authentication, product listings, and order management",
+          "Integrated MySQL database for secure transaction handling",
+          "Designed responsive UI for improved user experience"
+        ]
+      }
+    ],
+    "education": {
+      "degree": "B.Tech in Artificial Intelligence & Data Science",
+      "institution": "Indira College of Engineering & Management, Pune",
+      "year": "Nov 2022 \u2013 June 2026"
+    }
+  },
+  "verified_claims": {
+    "candidate_name": "Nilay Sharma",
+    "github_username": "NilaySharma23",
+    "github_url": "https://github.com/NilaySharma23",
+    "skills": [
+      "Python",
+      "SQL",
+      "JavaScript",
+      "HTML/CSS",
+      "TensorFlow",
+      "PyTorch",
+      "scikit-learn",
+      "Keras",
+      "OpenCV",
+      "Deep Learning",
+      "NLP",
+      "Neural Networks",
+      "RAG",
+      "LangChain",
+      "LangGraph",
+      "CrewAI",
+      "Prompt Engineering",
+      "ETL Pipelines",
+      "Data Modeling",
+      "Data Warehousing",
+      "PySpark",
+      "Databricks",
+      "Pandas",
+      "NumPy",
+      "React.js",
+      "REST APIs",
+      "Flask",
+      "MySQL",
+      "Google Cloud Platform",
+      "Firebase",
+      "Git",
+      "VS Code",
+      "Jupyter Notebook",
+      "Postman"
+    ],
+    "experience": [
+      {
+        "company": "Vega Visionary Training FZE",
+        "role": "AI Intern",
+        "duration": "Nov 2025 \u2013 Present",
+        "claims": [
+          "Developed and refined prompt engineering strategies to improve output quality, reasoning accuracy, and consistency",
+          "Built automated content generation systems using AI models with structured rules, constraints, and validation logic",
+          "Performed iterative testing and evaluation to enhance model performance through prompt tuning and feedback loops",
+          "Collaborated on scalable AI solutions for educational and content-driven applications"
+        ]
+      },
+      {
+        "company": "The Skill Guru Foundation",
+        "role": "Lead AI Dev Intern",
+        "duration": "Nov 2025 \u2013 Jan 2026",
+        "claims": [
+          "Led development of AI-driven solutions to support NGO operations and social initiatives",
+          "Applied machine learning and data analysis techniques to derive actionable insights",
+          "Built data pipelines, model prototypes, and reports to improve operational efficiency and outreach"
+        ]
+      },
+      {
+        "company": "ICEM, Pune",
+        "role": "Data Scientist Intern",
+        "duration": "Jan 2025 \u2013 Feb 2025",
+        "claims": [
+          "Designed data pipelines and performed analytics using Pandas, NumPy, and MySQL",
+          "Analyzed large datasets for housing and market basket analysis projects",
+          "Worked on ETL workflows, feature engineering, and data visualization"
+        ]
+      }
+    ],
+    "projects": [
+      {
+        "name": "Fraud Detection System",
+        "tech_stack": [
+          "Python",
+          "Scikit-learn",
+          "Pandas",
+          "NumPy"
+        ],
+        "claims": [
+          "Built ML-based fraud detection system on financial transaction data",
+          "Implemented Random Forest & Isolation Forest for supervised and anomaly detection",
+          "Engineered features based on transaction behavior (amount, time, user patterns)",
+          "Built interactive dashboards (Seaborn/Matplotlib) for insights and reporting"
+        ]
+      },
+      {
+        "name": "Algo-Trading System with ML & Automation",
+        "tech_stack": [
+          "Python",
+          "yfinance",
+          "Pandas",
+          "NumPy",
+          "TA-Lib",
+          "Scikit-learn",
+          "Backtrader"
+        ],
+        "claims": [
+          "Built end-to-end algorithmic trading system using real-time and historical stock data (Yahoo Finance API)",
+          "Backtested strategies over 6 months with automated buy/sell signals and portfolio analytics (P&L, win ratio)",
+          "Integrated ML models (Logistic Regression, Decision Tree) using RSI, MACD, and volume indicators",
+          "Automated trade logging to Google Sheets and implemented Telegram alerts for real-time signals"
+        ]
+      },
+      {
+        "name": "Olympic Image Recognition System",
+        "tech_stack": [
+          "Python",
+          "PyTorch",
+          "OpenCV"
+        ],
+        "claims": [
+          "Created custom dataset of 220 images across 11 classes with structured preprocessing & augmentation",
+          "Developed CNN-based deep learning model for image classification",
+          "Focused on data integrity, preprocessing pipelines, and model accuracy improvement"
+        ]
+      },
+      {
+        "name": "Online Shopping System (Full-Stack)",
+        "tech_stack": [
+          "Flask",
+          "MySQL",
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ],
+        "claims": [
+          "Built full-stack web application with authentication, product listings, and order management",
+          "Integrated MySQL database for secure transaction handling",
+          "Designed responsive UI for improved user experience"
+        ]
+      }
+    ],
+    "education": {
+      "degree": "B.Tech in Artificial Intelligence & Data Science",
+      "institution": "Indira College of Engineering & Management, Pune",
+      "year": "Nov 2022 \u2013 June 2026"
+    },
+    "verification_results": [
+      {
+        "type": "project",
+        "name": "Fraud Detection System",
+        "github_evidence": {
+          "repo_name": "AI-Claim-and-Risk-Investigator",
+          "description": "AI Claim & Risk Investigator \u2013 A multi-agent insurance claim verification system built with CrewAI, LangGraph, LangChain RAG, and Gemini 1.5 Flash. Automatically analyzes motor/health claims, detects anomalies, evaluates fraud probability, retrieves relevant policy clauses via FAISS vector store, and generates a structured verification report.",
+          "languages": [
+            "Python"
+          ],
+          "stars": 0,
+          "last_updated": "2025-11-12T19:13:00Z",
+          "topics": [],
+          "match_confidence": "high",
+          "match_reasoning": "The repository 'AI-Claim-and-Risk-Investigator' is matched because its description explicitly mentions 'detects anomalies, evaluates fraud probability', which aligns with the claimed 'Fraud Detection System' project."
+        },
+        "web_evidence": [
+          {
+            "title": "Naive Bayes Spam Email Classifier.ipynb - GitHub",
+            "snippet": "... detection', 'detective', 'detention', 'deter', 'deteriorate ... fraud', 'frauds', 'fraudulent', 'fraudulently', 'frayed', 'frayre', 'frayser ...",
+            "url": "https://github.com/nikhilkr29/Email-Spam-Classifier-using-Naive-Bayes/blob/main/Naive+Bayes+Spam+Email+Classifier.ipynb"
+          },
+          {
+            "title": "Useful python automation scripts - Facebook",
+            "snippet": "23 Dec 2025\u00b7\u25aa\ufe0fBanks use anomaly detection models that learn your spending patterns and flag deviations in milliseconds. No AI = fraud notices after the ...",
+            "url": "https://www.facebook.com/groups/802532124993016/posts/1391425036103719/"
+          },
+          {
+            "title": "Machine Learning, Image Processing, Network Security and Data ...",
+            "snippet": ". . . . . . . . . . . . . . . . . . . 271 Surjit Paul and Binod Kumar Multimodal Fake News Detection on Fakeddit Dataset Using Transformer-Based Architectures .",
+            "url": "https://dokumen.pub/machine-learning-image-processing-network-security-and-data-sciences-4th-international-conference-mind-2022-virtual-event-january-1920-2023-proceedings-part-ii-9783031243660-9783031243677.html"
+          }
+        ],
+        "confidence_score": 0.8,
+        "status": "verified",
+        "reasoning": "The candidate's GitHub repository contains a project related to fraud detection and utilizes Python, which aligns with the claimed tech stack and project.",
+        "github_verified": true
+      },
+      {
+        "type": "project",
+        "name": "Algo-Trading System with ML & Automation",
+        "github_evidence": {
+          "repo_name": "algo-trading-system",
+          "description": "Python-based algo-trading prototype for H To H internship, implementing RSI + MA crossover strategy with Google Sheets automation.",
+          "languages": [
+            "Python"
+          ],
+          "stars": 0,
+          "last_updated": "2025-08-05T13:40:01Z",
+          "topics": [],
+          "match_confidence": "high",
+          "match_reasoning": "The repository name 'algo-trading-system' exactly matches the claimed project 'Algo-Trading System with ML & Automation'."
+        },
+        "web_evidence": [
+          {
+            "title": "GitHub- Riyamahato2003/Algo-Trading-System-with-ML-Automation",
+            "snippet": "Imports:yfinance,pandas,numpy, matplotlib, seaborn, plotly,scikit-learn,ta(technical analysis), xgboost, and utility modules. Stock Selection",
+            "url": "https://github.com/Riyamahato2003/Algo-Trading-System-with-ML-Automation"
+          },
+          {
+            "title": "AlgorithmicTradingUsingPython- Full Course - YouTube",
+            "snippet": "Learnhow to perform algorithmictradingusingPythonin this complete course.",
+            "url": "https://www.youtube.com/watch?v=xfzGZB4HhEE"
+          },
+          {
+            "title": "AlgorithmicTradingWithPython",
+            "snippet": "Algorithmic trading, or \"algotrading,\"automatestrading decisions and executions using computer algorithms.Python'slibraries, likeyfinanceandpandas-datareader, facilitate seamless data acquisition and manipulation.",
+            "url": "https://www.pyquantnews.com/topics/algorithmic-trading-with-python?3c9b4f97_page=7"
+          }
+        ],
+        "confidence_score": 0.8,
+        "status": "verified",
+        "reasoning": "The candidate's GitHub repository and web search results confirm the use of claimed technologies and project description, although some discrepancies exist in the exact tech stack and project name.",
+        "github_verified": true
+      },
+      {
+        "type": "project",
+        "name": "Olympic Image Recognition System",
+        "github_evidence": null,
+        "web_evidence": [
+          {
+            "title": "opencv-python \u00b7 GitHub Topics \u00b7 GitHub",
+            "snippet": "This is a Computer vision package that makes its easy to run Image processing and AI functions. At the core it uses OpenCV and Mediapipe libraries. ... python opencv deep-neural-networks computer-vision deep-learning neural-network cnn python3 ...",
+            "url": "https://github.com/topics/opencv-python"
+          },
+          {
+            "title": "image-recognition \u00b7 GitHub Topics \u00b7 GitHub",
+            "snippet": "machine-learning computer-vision deep-learning pytorch ssd image-recognition webcam object-detection",
+            "url": "https://github.com/topics/image-recognition"
+          },
+          {
+            "title": "GitHub - shayantaherian/Object-detection: Object detection (YOLO) with pytorch, OpenCV and python \u00b7 GitHub",
+            "snippet": "Object detection (YOLO) with pytorch, OpenCV and python - shayantaherian/Object-detection",
+            "url": "https://github.com/shayantaherian/Object-detection"
+          }
+        ],
+        "confidence_score": 0.8,
+        "status": "unverified",
+        "reasoning": "The tech stack claimed by the candidate is consistent with the web search results, but there is no direct evidence linking the candidate to the Olympic Image Recognition System project on GitHub.",
+        "github_verified": false
+      },
+      {
+        "type": "project",
+        "name": "Online Shopping System (Full-Stack)",
+        "github_evidence": null,
+        "web_evidence": [
+          {
+            "title": "GitHub- solygambas/html-css-javascript-projects: 100+ mini web...",
+            "snippet": "Enhance your learning journey with 100Projectsin 100 Days \u2013HTML,CSS&JavaScript: The Ultimate Companion Guide. This comprehensive guide is designed to help you maximize your experience with thisprojectcollection. Inside the companion guide, you'll find",
+            "url": "https://cccok.cn/solygambas/html-css-javascript-projects"
+          },
+          {
+            "title": "OnlineShoppingSystemusing PHP,MySQLwith Free Source Code",
+            "snippet": "Anonlineshoppingsystembuilt using PHP,CSS, JS, andMySQLcan include various key features to ensure it functions efficiently: Product Listings and Categories: Organize products in categories for easy browsing.",
+            "url": "https://updategadh.io/code-snippets/online-shopping-system/"
+          },
+          {
+            "title": "NilaySharma- Analyst @Ofi Services | Process Mining | LinkedIn",
+            "snippet": "ViewNilaySharma\u2019s profile on LinkedIn, a professional community of 1 billion members.- Designed and implemented data pipelines to push critical KPIs into downstreamsystems, enabling other teams to leverage real-time insights for reporting and decision-making. Show less.",
+            "url": "https://in.linkedin.com/in/nilay-sharma-019333218"
+          }
+        ],
+        "confidence_score": 0.0,
+        "status": "unverified",
+        "reasoning": "The evidence does not support the candidate's claim of working on a full-stack online shopping system using Flask, MySQL, HTML, CSS, and JavaScript.",
+        "github_verified": false
+      }
+    ],
+    "audit": {
+      "hallucination_flags": [
+        "Claiming expertise in a wide range of technologies and frameworks without concrete evidence of in-depth knowledge",
+        "Project descriptions are vague and lack specific details about the candidate's role and contributions",
+        "Overemphasis on buzzwords like 'Deep Learning', 'NLP', and 'Neural Networks' without clear examples of application"
+      ],
+      "bias_flags": [
+        "The evaluation relies heavily on GitHub evidence, which may favor candidates with a strong online presence",
+        "The confidence scores are consistently high (0.8) across verified projects, which may indicate a lack of nuance in the evaluation process"
+      ],
+      "credibility_score": 0.6,
+      "overall_assessment": "The candidate's resume verification report raises some concerns about hallucinations and over-claiming, particularly with regards to the breadth of technologies and frameworks listed. While the candidate has provided some evidence of working on relevant projects, the descriptions are often vague and lack concrete details. The evaluation process also appears to be biased towards candidates with a strong online presence. Overall, the credibility score is moderate, and further verification is recommended to ensure the accuracy of the candidate's claims.",
+      "needs_reverification": true
+    },
+    "avg_confidence": 0.6000000000000001
+  },
+  "audited_claims": {
+    "candidate_name": "Nilay Sharma",
+    "github_username": "NilaySharma23",
+    "github_url": "https://github.com/NilaySharma23",
+    "skills": [
+      "Python",
+      "SQL",
+      "JavaScript",
+      "HTML/CSS",
+      "TensorFlow",
+      "PyTorch",
+      "scikit-learn",
+      "Keras",
+      "OpenCV",
+      "Deep Learning",
+      "NLP",
+      "Neural Networks",
+      "RAG",
+      "LangChain",
+      "LangGraph",
+      "CrewAI",
+      "Prompt Engineering",
+      "ETL Pipelines",
+      "Data Modeling",
+      "Data Warehousing",
+      "PySpark",
+      "Databricks",
+      "Pandas",
+      "NumPy",
+      "React.js",
+      "REST APIs",
+      "Flask",
+      "MySQL",
+      "Google Cloud Platform",
+      "Firebase",
+      "Git",
+      "VS Code",
+      "Jupyter Notebook",
+      "Postman"
+    ],
+    "experience": [
+      {
+        "company": "Vega Visionary Training FZE",
+        "role": "AI Intern",
+        "duration": "Nov 2025 \u2013 Present",
+        "claims": [
+          "Developed and refined prompt engineering strategies to improve output quality, reasoning accuracy, and consistency",
+          "Built automated content generation systems using AI models with structured rules, constraints, and validation logic",
+          "Performed iterative testing and evaluation to enhance model performance through prompt tuning and feedback loops",
+          "Collaborated on scalable AI solutions for educational and content-driven applications"
+        ]
+      },
+      {
+        "company": "The Skill Guru Foundation",
+        "role": "Lead AI Dev Intern",
+        "duration": "Nov 2025 \u2013 Jan 2026",
+        "claims": [
+          "Led development of AI-driven solutions to support NGO operations and social initiatives",
+          "Applied machine learning and data analysis techniques to derive actionable insights",
+          "Built data pipelines, model prototypes, and reports to improve operational efficiency and outreach"
+        ]
+      },
+      {
+        "company": "ICEM, Pune",
+        "role": "Data Scientist Intern",
+        "duration": "Jan 2025 \u2013 Feb 2025",
+        "claims": [
+          "Designed data pipelines and performed analytics using Pandas, NumPy, and MySQL",
+          "Analyzed large datasets for housing and market basket analysis projects",
+          "Worked on ETL workflows, feature engineering, and data visualization"
+        ]
+      }
+    ],
+    "projects": [
+      {
+        "name": "Fraud Detection System",
+        "tech_stack": [
+          "Python",
+          "Scikit-learn",
+          "Pandas",
+          "NumPy"
+        ],
+        "claims": [
+          "Built ML-based fraud detection system on financial transaction data",
+          "Implemented Random Forest & Isolation Forest for supervised and anomaly detection",
+          "Engineered features based on transaction behavior (amount, time, user patterns)",
+          "Built interactive dashboards (Seaborn/Matplotlib) for insights and reporting"
+        ]
+      },
+      {
+        "name": "Algo-Trading System with ML & Automation",
+        "tech_stack": [
+          "Python",
+          "yfinance",
+          "Pandas",
+          "NumPy",
+          "TA-Lib",
+          "Scikit-learn",
+          "Backtrader"
+        ],
+        "claims": [
+          "Built end-to-end algorithmic trading system using real-time and historical stock data (Yahoo Finance API)",
+          "Backtested strategies over 6 months with automated buy/sell signals and portfolio analytics (P&L, win ratio)",
+          "Integrated ML models (Logistic Regression, Decision Tree) using RSI, MACD, and volume indicators",
+          "Automated trade logging to Google Sheets and implemented Telegram alerts for real-time signals"
+        ]
+      },
+      {
+        "name": "Olympic Image Recognition System",
+        "tech_stack": [
+          "Python",
+          "PyTorch",
+          "OpenCV"
+        ],
+        "claims": [
+          "Created custom dataset of 220 images across 11 classes with structured preprocessing & augmentation",
+          "Developed CNN-based deep learning model for image classification",
+          "Focused on data integrity, preprocessing pipelines, and model accuracy improvement"
+        ]
+      },
+      {
+        "name": "Online Shopping System (Full-Stack)",
+        "tech_stack": [
+          "Flask",
+          "MySQL",
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ],
+        "claims": [
+          "Built full-stack web application with authentication, product listings, and order management",
+          "Integrated MySQL database for secure transaction handling",
+          "Designed responsive UI for improved user experience"
+        ]
+      }
+    ],
+    "education": {
+      "degree": "B.Tech in Artificial Intelligence & Data Science",
+      "institution": "Indira College of Engineering & Management, Pune",
+      "year": "Nov 2022 \u2013 June 2026"
+    },
+    "verification_results": [
+      {
+        "type": "project",
+        "name": "Fraud Detection System",
+        "github_evidence": {
+          "repo_name": "AI-Claim-and-Risk-Investigator",
+          "description": "AI Claim & Risk Investigator \u2013 A multi-agent insurance claim verification system built with CrewAI, LangGraph, LangChain RAG, and Gemini 1.5 Flash. Automatically analyzes motor/health claims, detects anomalies, evaluates fraud probability, retrieves relevant policy clauses via FAISS vector store, and generates a structured verification report.",
+          "languages": [
+            "Python"
+          ],
+          "stars": 0,
+          "last_updated": "2025-11-12T19:13:00Z",
+          "topics": [],
+          "match_confidence": "high",
+          "match_reasoning": "The repository 'AI-Claim-and-Risk-Investigator' is matched because its description explicitly mentions 'detects anomalies, evaluates fraud probability', which aligns with the claimed 'Fraud Detection System' project."
+        },
+        "web_evidence": [
+          {
+            "title": "Naive Bayes Spam Email Classifier.ipynb - GitHub",
+            "snippet": "... detection', 'detective', 'detention', 'deter', 'deteriorate ... fraud', 'frauds', 'fraudulent', 'fraudulently', 'frayed', 'frayre', 'frayser ...",
+            "url": "https://github.com/nikhilkr29/Email-Spam-Classifier-using-Naive-Bayes/blob/main/Naive+Bayes+Spam+Email+Classifier.ipynb"
+          },
+          {
+            "title": "Useful python automation scripts - Facebook",
+            "snippet": "23 Dec 2025\u00b7\u25aa\ufe0fBanks use anomaly detection models that learn your spending patterns and flag deviations in milliseconds. No AI = fraud notices after the ...",
+            "url": "https://www.facebook.com/groups/802532124993016/posts/1391425036103719/"
+          },
+          {
+            "title": "Machine Learning, Image Processing, Network Security and Data ...",
+            "snippet": ". . . . . . . . . . . . . . . . . . . 271 Surjit Paul and Binod Kumar Multimodal Fake News Detection on Fakeddit Dataset Using Transformer-Based Architectures .",
+            "url": "https://dokumen.pub/machine-learning-image-processing-network-security-and-data-sciences-4th-international-conference-mind-2022-virtual-event-january-1920-2023-proceedings-part-ii-9783031243660-9783031243677.html"
+          }
+        ],
+        "confidence_score": 0.8,
+        "status": "verified",
+        "reasoning": "The candidate's GitHub repository contains a project related to fraud detection and utilizes Python, which aligns with the claimed tech stack and project.",
+        "github_verified": true
+      },
+      {
+        "type": "project",
+        "name": "Algo-Trading System with ML & Automation",
+        "github_evidence": {
+          "repo_name": "algo-trading-system",
+          "description": "Python-based algo-trading prototype for H To H internship, implementing RSI + MA crossover strategy with Google Sheets automation.",
+          "languages": [
+            "Python"
+          ],
+          "stars": 0,
+          "last_updated": "2025-08-05T13:40:01Z",
+          "topics": [],
+          "match_confidence": "high",
+          "match_reasoning": "The repository name 'algo-trading-system' exactly matches the claimed project 'Algo-Trading System with ML & Automation'."
+        },
+        "web_evidence": [
+          {
+            "title": "GitHub- Riyamahato2003/Algo-Trading-System-with-ML-Automation",
+            "snippet": "Imports:yfinance,pandas,numpy, matplotlib, seaborn, plotly,scikit-learn,ta(technical analysis), xgboost, and utility modules. Stock Selection",
+            "url": "https://github.com/Riyamahato2003/Algo-Trading-System-with-ML-Automation"
+          },
+          {
+            "title": "AlgorithmicTradingUsingPython- Full Course - YouTube",
+            "snippet": "Learnhow to perform algorithmictradingusingPythonin this complete course.",
+            "url": "https://www.youtube.com/watch?v=xfzGZB4HhEE"
+          },
+          {
+            "title": "AlgorithmicTradingWithPython",
+            "snippet": "Algorithmic trading, or \"algotrading,\"automatestrading decisions and executions using computer algorithms.Python'slibraries, likeyfinanceandpandas-datareader, facilitate seamless data acquisition and manipulation.",
+            "url": "https://www.pyquantnews.com/topics/algorithmic-trading-with-python?3c9b4f97_page=7"
+          }
+        ],
+        "confidence_score": 0.8,
+        "status": "verified",
+        "reasoning": "The candidate's GitHub repository and web search results confirm the use of claimed technologies and project description, although some discrepancies exist in the exact tech stack and project name.",
+        "github_verified": true
+      },
+      {
+        "type": "project",
+        "name": "Olympic Image Recognition System",
+        "github_evidence": null,
+        "web_evidence": [
+          {
+            "title": "opencv-python \u00b7 GitHub Topics \u00b7 GitHub",
+            "snippet": "This is a Computer vision package that makes its easy to run Image processing and AI functions. At the core it uses OpenCV and Mediapipe libraries. ... python opencv deep-neural-networks computer-vision deep-learning neural-network cnn python3 ...",
+            "url": "https://github.com/topics/opencv-python"
+          },
+          {
+            "title": "image-recognition \u00b7 GitHub Topics \u00b7 GitHub",
+            "snippet": "machine-learning computer-vision deep-learning pytorch ssd image-recognition webcam object-detection",
+            "url": "https://github.com/topics/image-recognition"
+          },
+          {
+            "title": "GitHub - shayantaherian/Object-detection: Object detection (YOLO) with pytorch, OpenCV and python \u00b7 GitHub",
+            "snippet": "Object detection (YOLO) with pytorch, OpenCV and python - shayantaherian/Object-detection",
+            "url": "https://github.com/shayantaherian/Object-detection"
+          }
+        ],
+        "confidence_score": 0.8,
+        "status": "unverified",
+        "reasoning": "The tech stack claimed by the candidate is consistent with the web search results, but there is no direct evidence linking the candidate to the Olympic Image Recognition System project on GitHub.",
+        "github_verified": false
+      },
+      {
+        "type": "project",
+        "name": "Online Shopping System (Full-Stack)",
+        "github_evidence": null,
+        "web_evidence": [
+          {
+            "title": "GitHub- solygambas/html-css-javascript-projects: 100+ mini web...",
+            "snippet": "Enhance your learning journey with 100Projectsin 100 Days \u2013HTML,CSS&JavaScript: The Ultimate Companion Guide. This comprehensive guide is designed to help you maximize your experience with thisprojectcollection. Inside the companion guide, you'll find",
+            "url": "https://cccok.cn/solygambas/html-css-javascript-projects"
+          },
+          {
+            "title": "OnlineShoppingSystemusing PHP,MySQLwith Free Source Code",
+            "snippet": "Anonlineshoppingsystembuilt using PHP,CSS, JS, andMySQLcan include various key features to ensure it functions efficiently: Product Listings and Categories: Organize products in categories for easy browsing.",
+            "url": "https://updategadh.io/code-snippets/online-shopping-system/"
+          },
+          {
+            "title": "NilaySharma- Analyst @Ofi Services | Process Mining | LinkedIn",
+            "snippet": "ViewNilaySharma\u2019s profile on LinkedIn, a professional community of 1 billion members.- Designed and implemented data pipelines to push critical KPIs into downstreamsystems, enabling other teams to leverage real-time insights for reporting and decision-making. Show less.",
+            "url": "https://in.linkedin.com/in/nilay-sharma-019333218"
+          }
+        ],
+        "confidence_score": 0.0,
+        "status": "unverified",
+        "reasoning": "The evidence does not support the candidate's claim of working on a full-stack online shopping system using Flask, MySQL, HTML, CSS, and JavaScript.",
+        "github_verified": false
+      }
+    ],
+    "audit": {
+      "hallucination_flags": [
+        "Claiming expertise in a wide range of technologies and frameworks without concrete evidence of in-depth knowledge",
+        "Project descriptions are vague and lack specific details about the candidate's role and contributions",
+        "Overemphasis on buzzwords like 'Deep Learning', 'NLP', and 'Neural Networks' without clear examples of application"
+      ],
+      "bias_flags": [
+        "The evaluation relies heavily on GitHub evidence, which may favor candidates with a strong online presence",
+        "The confidence scores are consistently high (0.8) across verified projects, which may indicate a lack of nuance in the evaluation process"
+      ],
+      "credibility_score": 0.6,
+      "overall_assessment": "The candidate's resume verification report raises some concerns about hallucinations and over-claiming, particularly with regards to the breadth of technologies and frameworks listed. While the candidate has provided some evidence of working on relevant projects, the descriptions are often vague and lack concrete details. The evaluation process also appears to be biased towards candidates with a strong online presence. Overall, the credibility score is moderate, and further verification is recommended to ensure the accuracy of the candidate's claims.",
+      "needs_reverification": true
+    },
+    "avg_confidence": 0.6000000000000001
+  }
+}

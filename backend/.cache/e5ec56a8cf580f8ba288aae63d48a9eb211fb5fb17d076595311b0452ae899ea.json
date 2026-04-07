@@ -1,0 +1,213 @@
+{
+  "parsed_claims": {
+    "candidate_name": "MANAS MESHRAM",
+    "github_username": null,
+    "github_url": null,
+    "skills": [
+      "Facebook Marketing",
+      "Generative AI",
+      "Market Analysis",
+      "Lead Generation",
+      "SEO",
+      "Digital Marketing",
+      "Influencer Marketing",
+      "AI"
+    ],
+    "experience": [
+      {
+        "company": "theConsultQuest",
+        "role": "Co-founder",
+        "duration": "June 2024 - Present",
+        "claims": [
+          "Co-founded and established theConsultQuest"
+        ]
+      },
+      {
+        "company": "Qoedit",
+        "role": "Marketing Intern",
+        "duration": "July 2020 - Aug 2020",
+        "claims": [
+          "Worked on SEO and Content Writer"
+        ]
+      },
+      {
+        "company": "B0arding.com",
+        "role": "Brand Marketing Manager",
+        "duration": "Aug 2020 - Oct 2022",
+        "claims": [
+          "Worked on SEO"
+        ]
+      },
+      {
+        "company": "Sagility US",
+        "role": "PPC & SEO Head",
+        "duration": "Sep 2024 - Present",
+        "claims": []
+      },
+      {
+        "company": "Karigari.ai",
+        "role": "Marketing/Branding Head",
+        "duration": "Sep 2024 - Nov 2024",
+        "claims": [
+          "Worked on SEO, SEM, SMO, SMM"
+        ]
+      }
+    ],
+    "projects": [],
+    "education": {
+      "degree": "BACHELORS OF ARTS: MULTIMEDIA AND MASS COMMUNICATION, Specialization in Brand Management",
+      "institution": "RUIA COLLEGE, MUMBAI and UNIVERSITY OF LONDON",
+      "year": "June 2024- Oct 2024 and July 2024-2027"
+    }
+  },
+  "verified_claims": {
+    "candidate_name": "MANAS MESHRAM",
+    "github_username": null,
+    "github_url": null,
+    "skills": [
+      "Facebook Marketing",
+      "Generative AI",
+      "Market Analysis",
+      "Lead Generation",
+      "SEO",
+      "Digital Marketing",
+      "Influencer Marketing",
+      "AI"
+    ],
+    "experience": [
+      {
+        "company": "theConsultQuest",
+        "role": "Co-founder",
+        "duration": "June 2024 - Present",
+        "claims": [
+          "Co-founded and established theConsultQuest"
+        ]
+      },
+      {
+        "company": "Qoedit",
+        "role": "Marketing Intern",
+        "duration": "July 2020 - Aug 2020",
+        "claims": [
+          "Worked on SEO and Content Writer"
+        ]
+      },
+      {
+        "company": "B0arding.com",
+        "role": "Brand Marketing Manager",
+        "duration": "Aug 2020 - Oct 2022",
+        "claims": [
+          "Worked on SEO"
+        ]
+      },
+      {
+        "company": "Sagility US",
+        "role": "PPC & SEO Head",
+        "duration": "Sep 2024 - Present",
+        "claims": []
+      },
+      {
+        "company": "Karigari.ai",
+        "role": "Marketing/Branding Head",
+        "duration": "Sep 2024 - Nov 2024",
+        "claims": [
+          "Worked on SEO, SEM, SMO, SMM"
+        ]
+      }
+    ],
+    "projects": [],
+    "education": {
+      "degree": "BACHELORS OF ARTS: MULTIMEDIA AND MASS COMMUNICATION, Specialization in Brand Management",
+      "institution": "RUIA COLLEGE, MUMBAI and UNIVERSITY OF LONDON",
+      "year": "June 2024- Oct 2024 and July 2024-2027"
+    },
+    "verification_results": [],
+    "audit": {
+      "hallucination_flags": [
+        "Claiming expertise in 'Generative AI' and 'AI' without specific details or context",
+        "Listing 'Digital Marketing' as a separate skill when it seems to encompass other skills like 'Facebook Marketing', 'SEO', and 'Influencer Marketing'"
+      ],
+      "bias_flags": [
+        "Lack of concrete evidence or verification results to support the claimed skills"
+      ],
+      "credibility_score": 0.2,
+      "overall_assessment": "The candidate's resume raises several red flags due to the lack of specific details and context for the claimed skills, particularly in emerging and broad fields like 'Generative AI' and 'Digital Marketing'. The absence of any verification results further diminishes the credibility of these claims. Therefore, it is essential to approach these claims with skepticism and consider them as potential hallucinations or over-claiming until more substantial evidence is provided.",
+      "needs_reverification": true
+    },
+    "avg_confidence": 0.5
+  },
+  "audited_claims": {
+    "candidate_name": "MANAS MESHRAM",
+    "github_username": null,
+    "github_url": null,
+    "skills": [
+      "Facebook Marketing",
+      "Generative AI",
+      "Market Analysis",
+      "Lead Generation",
+      "SEO",
+      "Digital Marketing",
+      "Influencer Marketing",
+      "AI"
+    ],
+    "experience": [
+      {
+        "company": "theConsultQuest",
+        "role": "Co-founder",
+        "duration": "June 2024 - Present",
+        "claims": [
+          "Co-founded and established theConsultQuest"
+        ]
+      },
+      {
+        "company": "Qoedit",
+        "role": "Marketing Intern",
+        "duration": "July 2020 - Aug 2020",
+        "claims": [
+          "Worked on SEO and Content Writer"
+        ]
+      },
+      {
+        "company": "B0arding.com",
+        "role": "Brand Marketing Manager",
+        "duration": "Aug 2020 - Oct 2022",
+        "claims": [
+          "Worked on SEO"
+        ]
+      },
+      {
+        "company": "Sagility US",
+        "role": "PPC & SEO Head",
+        "duration": "Sep 2024 - Present",
+        "claims": []
+      },
+      {
+        "company": "Karigari.ai",
+        "role": "Marketing/Branding Head",
+        "duration": "Sep 2024 - Nov 2024",
+        "claims": [
+          "Worked on SEO, SEM, SMO, SMM"
+        ]
+      }
+    ],
+    "projects": [],
+    "education": {
+      "degree": "BACHELORS OF ARTS: MULTIMEDIA AND MASS COMMUNICATION, Specialization in Brand Management",
+      "institution": "RUIA COLLEGE, MUMBAI and UNIVERSITY OF LONDON",
+      "year": "June 2024- Oct 2024 and July 2024-2027"
+    },
+    "verification_results": [],
+    "audit": {
+      "hallucination_flags": [
+        "Claiming expertise in 'Generative AI' and 'AI' without specific details or context",
+        "Listing 'Digital Marketing' as a separate skill when it seems to encompass other skills like 'Facebook Marketing', 'SEO', and 'Influencer Marketing'"
+      ],
+      "bias_flags": [
+        "Lack of concrete evidence or verification results to support the claimed skills"
+      ],
+      "credibility_score": 0.2,
+      "overall_assessment": "The candidate's resume raises several red flags due to the lack of specific details and context for the claimed skills, particularly in emerging and broad fields like 'Generative AI' and 'Digital Marketing'. The absence of any verification results further diminishes the credibility of these claims. Therefore, it is essential to approach these claims with skepticism and consider them as potential hallucinations or over-claiming until more substantial evidence is provided.",
+      "needs_reverification": true
+    },
+    "avg_confidence": 0.5
+  }
+}

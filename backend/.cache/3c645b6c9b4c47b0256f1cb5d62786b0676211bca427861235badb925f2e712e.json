@@ -1,0 +1,489 @@
+{
+  "parsed_claims": {
+    "candidate_name": "Kayan Sirsat",
+    "github_username": "KayanSirsat",
+    "github_url": "github.com/KayanSirsat",
+    "skills": [
+      "Python",
+      "SQL",
+      "Java",
+      "C/C++",
+      "supervised learning",
+      "NLP preprocessing",
+      "feature engineering",
+      "model evaluation",
+      "pandas",
+      "numpy",
+      "scikit-learn",
+      "OpenCV",
+      "Streamlit",
+      "Git/GitHub",
+      "PostgreSQL",
+      "MongoDB"
+    ],
+    "experience": [
+      {
+        "company": "CodTech IT Solutions",
+        "role": "Project Intern \u2013 Full Stack Development",
+        "duration": "Jan 2025 \u2013 Mar 2025",
+        "claims": [
+          "Developed full-stack web applications involving REST APIs, database integration and frontend components",
+          "Used Git and GitHub for version control and collaborative development workflows"
+        ]
+      }
+    ],
+    "projects": [
+      {
+        "name": "Scalable Sentiment Analysis Pipeline (NLP)",
+        "tech_stack": [
+          "Python",
+          "scikit-learn",
+          "TF-IDF",
+          "Streamlit"
+        ],
+        "claims": [
+          "Designed an end-to-end sentiment analysis pipeline covering text preprocessing, TF-IDF feature extraction, model training, evaluation and inference",
+          "Implemented leakage-safe train/test workflows and validated performance on the IMDb dataset",
+          "Built offline training with model persistence and a lightweight inference-only interface using Streamlit"
+        ]
+      },
+      {
+        "name": "Orbital Debris and Satellite Detection (Computer Vision)",
+        "tech_stack": [
+          "Python",
+          "OpenCV",
+          "YOLO"
+        ],
+        "claims": [
+          "Developing a computer vision pipeline for space object detection using YOLO-based models and OpenCV",
+          "Generated synthetic training data with sensor-noise simulation to improve robustness",
+          "Exploring geometric approaches for orientation and pose estimation"
+        ]
+      },
+      {
+        "name": "AI-Driven Risk Prediction Framework (Final Year Project)",
+        "tech_stack": [],
+        "claims": [
+          "Building a machine learning framework to predict project risks using structured data and textual inputs",
+          "Implemented tree-based models with NLP feature extraction and explainability for decision support",
+          "Designed the system as a modular pipeline suitable for iterative experimentation and evaluation"
+        ]
+      }
+    ],
+    "education": {
+      "degree": "Bachelor of Engineering (B.E.) \u2013 Computer Engineering",
+      "institution": "Sinhgad College of Engineering, Pune",
+      "year": "2022 \u2013 2026"
+    }
+  },
+  "verified_claims": {
+    "candidate_name": "Kayan Sirsat",
+    "github_username": "KayanSirsat",
+    "github_url": "github.com/KayanSirsat",
+    "skills": [
+      "Python",
+      "SQL",
+      "Java",
+      "C/C++",
+      "supervised learning",
+      "NLP preprocessing",
+      "feature engineering",
+      "model evaluation",
+      "pandas",
+      "numpy",
+      "scikit-learn",
+      "OpenCV",
+      "Streamlit",
+      "Git/GitHub",
+      "PostgreSQL",
+      "MongoDB"
+    ],
+    "experience": [
+      {
+        "company": "CodTech IT Solutions",
+        "role": "Project Intern \u2013 Full Stack Development",
+        "duration": "Jan 2025 \u2013 Mar 2025",
+        "claims": [
+          "Developed full-stack web applications involving REST APIs, database integration and frontend components",
+          "Used Git and GitHub for version control and collaborative development workflows"
+        ]
+      }
+    ],
+    "projects": [
+      {
+        "name": "Scalable Sentiment Analysis Pipeline (NLP)",
+        "tech_stack": [
+          "Python",
+          "scikit-learn",
+          "TF-IDF",
+          "Streamlit"
+        ],
+        "claims": [
+          "Designed an end-to-end sentiment analysis pipeline covering text preprocessing, TF-IDF feature extraction, model training, evaluation and inference",
+          "Implemented leakage-safe train/test workflows and validated performance on the IMDb dataset",
+          "Built offline training with model persistence and a lightweight inference-only interface using Streamlit"
+        ]
+      },
+      {
+        "name": "Orbital Debris and Satellite Detection (Computer Vision)",
+        "tech_stack": [
+          "Python",
+          "OpenCV",
+          "YOLO"
+        ],
+        "claims": [
+          "Developing a computer vision pipeline for space object detection using YOLO-based models and OpenCV",
+          "Generated synthetic training data with sensor-noise simulation to improve robustness",
+          "Exploring geometric approaches for orientation and pose estimation"
+        ]
+      },
+      {
+        "name": "AI-Driven Risk Prediction Framework (Final Year Project)",
+        "tech_stack": [],
+        "claims": [
+          "Building a machine learning framework to predict project risks using structured data and textual inputs",
+          "Implemented tree-based models with NLP feature extraction and explainability for decision support",
+          "Designed the system as a modular pipeline suitable for iterative experimentation and evaluation"
+        ]
+      }
+    ],
+    "education": {
+      "degree": "Bachelor of Engineering (B.E.) \u2013 Computer Engineering",
+      "institution": "Sinhgad College of Engineering, Pune",
+      "year": "2022 \u2013 2026"
+    },
+    "verification_results": [
+      {
+        "type": "project",
+        "name": "Scalable Sentiment Analysis Pipeline (NLP)",
+        "github_evidence": {
+          "repo_name": "sentiment-analysis-pipeline",
+          "description": "Sentiment analysis pipeline using NLP baselines, benchmark evaluation, and low-latency inference.",
+          "languages": [
+            "Python"
+          ],
+          "stars": 0,
+          "last_updated": "2026-03-27T08:59:11Z",
+          "topics": [],
+          "match_confidence": "high",
+          "match_reasoning": "The repository name 'sentiment-analysis-pipeline' exactly matches the claimed project 'Scalable Sentiment Analysis Pipeline (NLP)' and its description mentions NLP, indicating a strong match."
+        },
+        "web_evidence": [
+          {
+            "title": "Python for NLP: Sentiment Analysis with Scikit-Learn",
+            "snippet": "November 16, 2023 -In this section, we will discuss the bag of words and TF-IDF scheme.",
+            "url": "https://stackabuse.com/python-for-nlp-sentiment-analysis-with-scikit-learn/"
+          },
+          {
+            "title": "text-sentiment-analysis \u00b7 GitHub Topics \u00b7 GitHub",
+            "snippet": "Text Sentiment Analysis in Python using Natural Language Processing (NLP) for Negative/Positive Content Detection. Deployed on the Cloud using Streamlit on the Heroku Platform.",
+            "url": "https://github.com/topics/text-sentiment-analysis"
+          },
+          {
+            "title": "A Complete Sentiment Analysis Project Using Python\u2019s Scikit-Learn \u2013 Regenerative",
+            "snippet": "September 7, 2021 -Next, I will use the TF-IDF vectorizer. This vectorizer is known to be a more popular one because it uses the term frequency of the words.",
+            "url": "https://regenerativetoday.com/a-complete-sentiment-analysis-project-using-pythons-scikit-learn/"
+          }
+        ],
+        "confidence_score": 0.9,
+        "status": "verified",
+        "reasoning": "The candidate's claim is supported by a GitHub repository with a matching project name and description, as well as web search results that confirm the use of the claimed tech stack.",
+        "github_verified": true
+      },
+      {
+        "type": "project",
+        "name": "Orbital Debris and Satellite Detection (Computer Vision)",
+        "github_evidence": {
+          "repo_name": "orbital-debris-detection",
+          "description": "Orbital debris and satellite detection with YOLOv8 and OpenCV",
+          "languages": [
+            "Python"
+          ],
+          "stars": 0,
+          "last_updated": "2025-12-28T17:53:58Z",
+          "topics": [],
+          "match_confidence": "high",
+          "match_reasoning": "The repository name 'orbital-debris-detection' exactly matches the claimed project 'Orbital Debris and Satellite Detection' and its description mentions relevant technologies like YOLOv8 and OpenCV."
+        },
+        "web_evidence": [
+          {
+            "title": "Train Yolov8 objectdetectionon a custom dataset | Step by... - YouTube",
+            "snippet": "In this video I show you a super comprehensive step by step tutorial on how to use yolov8 to train an objectdetectoron your own custom dataset!Code: https",
+            "url": "https://www.youtube.com/watch?v=m9fH9OWn8YM"
+          },
+          {
+            "title": "OpenCV:OpenCV-PythonTutorials",
+            "snippet": "OpenCV-PythonTutorials. Introduction toOpenCV. Learn how to setupOpenCV-Pythonon yourcomputer! Gui Features inOpenCV. Here you will learn how to display and save images and videos, control mouse events and create trackbar. Core Operations.",
+            "url": "https://docs.opencv.org/4.x/d6/d00/tutorial_py_root.html"
+          },
+          {
+            "title": "GitHub-opencv/opencv-python: Automated CI toolchain to produce...",
+            "snippet": "Pythonbindings forOpenCVare developed in officialOpenCVrepository and it's the best place to report issues.The build process for a single entry in the build matrices is as follows (see for example .github/workflows/build_wheels_linux.yml file)",
+            "url": "https://github.com/opencv/opencv-python"
+          }
+        ],
+        "confidence_score": 0.9,
+        "status": "verified",
+        "reasoning": "The candidate's claim is supported by a GitHub repository with a matching project name and tech stack, which was recently updated and has a high match confidence.",
+        "github_verified": true
+      },
+      {
+        "type": "project",
+        "name": "AI-Driven Risk Prediction Framework (Final Year Project)",
+        "github_evidence": {
+          "repo_name": "ai-risk-prediction-framework",
+          "description": null,
+          "languages": [
+            "Python",
+            "Jupyter Notebook"
+          ],
+          "stars": 0,
+          "last_updated": "2026-04-05T14:54:48Z",
+          "topics": [],
+          "match_confidence": "high",
+          "match_reasoning": "The repository name 'ai-risk-prediction-framework' exactly matches the claimed project name 'AI-Driven Risk Prediction Framework'."
+        },
+        "web_evidence": [
+          {
+            "title": "Search_engine_project/vocabulary.txt at master - GitHub",
+            "snippet": "Enterprise platformAI-powered developer platform. AVAILABLE ADD-ONS. GitHub Advanced SecurityEnterprise-grade security features \u00b7 Copilot for BusinessEnterprise ...",
+            "url": "https://github.com/wang1128/Search_engine_project/blob/master/vocabulary.txt"
+          },
+          {
+            "title": "Rajat Rohilla - Data Scientist | Credit Risk & Fraud Detection - LinkedIn",
+            "snippet": "I built a TensorFlow logistic regression framework that cut fraudulent loan submissions by 79% through real-time scoring against historical default benchmarks.",
+            "url": "https://www.linkedin.com/in/rohillarajat"
+          },
+          {
+            "title": "Itr Brahma Valley Report Final Aayushi Shirsat (123) 2222 - Scribd",
+            "snippet": "Itr Brahma Valley Report Final Aayushi Shirsat (123)2222 - Free download as PDF File (.pdf), Text File (.txt) or read online for free.",
+            "url": "https://www.scribd.com/document/948162777/Itr-Brahma-Valley-Report-Final-Aayushi-Shirsat-123-2222"
+          }
+        ],
+        "confidence_score": 0.8,
+        "status": "verified",
+        "reasoning": "The GitHub repository found matches the project name and tech stack claimed by the candidate, with a high match confidence.",
+        "github_verified": true
+      }
+    ],
+    "audit": {
+      "hallucination_flags": [
+        "The candidate claims expertise in a wide range of skills, including 'supervised learning', 'NLP preprocessing', 'feature engineering', and 'model evaluation', which may be overly broad or vague.",
+        "The project 'AI-Driven Risk Prediction Framework' has a null description in the GitHub repository, which may indicate a lack of transparency or clarity about the project's goals and outcomes."
+      ],
+      "bias_flags": [
+        "The evaluation relies heavily on GitHub evidence, which may favor candidates with a strong online presence or open-source contributions, potentially introducing bias against candidates with limited online activity.",
+        "The web evidence for the 'AI-Driven Risk Prediction Framework' project appears to be unrelated to the project itself, which may indicate a lack of relevant information or a reliance on tangential sources."
+      ],
+      "credibility_score": 0.85,
+      "overall_assessment": "The candidate's claims are generally supported by the provided evidence, with a high confidence score for two of the three projects. However, the evaluation is not without potential biases and hallucinations, particularly with regards to the breadth of claimed skills and the lack of transparency in one of the project descriptions. While the candidate's credibility is relatively high, a more nuanced evaluation of their skills and experience may be necessary to fully assess their qualifications.",
+      "needs_reverification": false
+    },
+    "avg_confidence": 0.8666666666666667
+  },
+  "audited_claims": {
+    "candidate_name": "Kayan Sirsat",
+    "github_username": "KayanSirsat",
+    "github_url": "github.com/KayanSirsat",
+    "skills": [
+      "Python",
+      "SQL",
+      "Java",
+      "C/C++",
+      "supervised learning",
+      "NLP preprocessing",
+      "feature engineering",
+      "model evaluation",
+      "pandas",
+      "numpy",
+      "scikit-learn",
+      "OpenCV",
+      "Streamlit",
+      "Git/GitHub",
+      "PostgreSQL",
+      "MongoDB"
+    ],
+    "experience": [
+      {
+        "company": "CodTech IT Solutions",
+        "role": "Project Intern \u2013 Full Stack Development",
+        "duration": "Jan 2025 \u2013 Mar 2025",
+        "claims": [
+          "Developed full-stack web applications involving REST APIs, database integration and frontend components",
+          "Used Git and GitHub for version control and collaborative development workflows"
+        ]
+      }
+    ],
+    "projects": [
+      {
+        "name": "Scalable Sentiment Analysis Pipeline (NLP)",
+        "tech_stack": [
+          "Python",
+          "scikit-learn",
+          "TF-IDF",
+          "Streamlit"
+        ],
+        "claims": [
+          "Designed an end-to-end sentiment analysis pipeline covering text preprocessing, TF-IDF feature extraction, model training, evaluation and inference",
+          "Implemented leakage-safe train/test workflows and validated performance on the IMDb dataset",
+          "Built offline training with model persistence and a lightweight inference-only interface using Streamlit"
+        ]
+      },
+      {
+        "name": "Orbital Debris and Satellite Detection (Computer Vision)",
+        "tech_stack": [
+          "Python",
+          "OpenCV",
+          "YOLO"
+        ],
+        "claims": [
+          "Developing a computer vision pipeline for space object detection using YOLO-based models and OpenCV",
+          "Generated synthetic training data with sensor-noise simulation to improve robustness",
+          "Exploring geometric approaches for orientation and pose estimation"
+        ]
+      },
+      {
+        "name": "AI-Driven Risk Prediction Framework (Final Year Project)",
+        "tech_stack": [],
+        "claims": [
+          "Building a machine learning framework to predict project risks using structured data and textual inputs",
+          "Implemented tree-based models with NLP feature extraction and explainability for decision support",
+          "Designed the system as a modular pipeline suitable for iterative experimentation and evaluation"
+        ]
+      }
+    ],
+    "education": {
+      "degree": "Bachelor of Engineering (B.E.) \u2013 Computer Engineering",
+      "institution": "Sinhgad College of Engineering, Pune",
+      "year": "2022 \u2013 2026"
+    },
+    "verification_results": [
+      {
+        "type": "project",
+        "name": "Scalable Sentiment Analysis Pipeline (NLP)",
+        "github_evidence": {
+          "repo_name": "sentiment-analysis-pipeline",
+          "description": "Sentiment analysis pipeline using NLP baselines, benchmark evaluation, and low-latency inference.",
+          "languages": [
+            "Python"
+          ],
+          "stars": 0,
+          "last_updated": "2026-03-27T08:59:11Z",
+          "topics": [],
+          "match_confidence": "high",
+          "match_reasoning": "The repository name 'sentiment-analysis-pipeline' exactly matches the claimed project 'Scalable Sentiment Analysis Pipeline (NLP)' and its description mentions NLP, indicating a strong match."
+        },
+        "web_evidence": [
+          {
+            "title": "Python for NLP: Sentiment Analysis with Scikit-Learn",
+            "snippet": "November 16, 2023 -In this section, we will discuss the bag of words and TF-IDF scheme.",
+            "url": "https://stackabuse.com/python-for-nlp-sentiment-analysis-with-scikit-learn/"
+          },
+          {
+            "title": "text-sentiment-analysis \u00b7 GitHub Topics \u00b7 GitHub",
+            "snippet": "Text Sentiment Analysis in Python using Natural Language Processing (NLP) for Negative/Positive Content Detection. Deployed on the Cloud using Streamlit on the Heroku Platform.",
+            "url": "https://github.com/topics/text-sentiment-analysis"
+          },
+          {
+            "title": "A Complete Sentiment Analysis Project Using Python\u2019s Scikit-Learn \u2013 Regenerative",
+            "snippet": "September 7, 2021 -Next, I will use the TF-IDF vectorizer. This vectorizer is known to be a more popular one because it uses the term frequency of the words.",
+            "url": "https://regenerativetoday.com/a-complete-sentiment-analysis-project-using-pythons-scikit-learn/"
+          }
+        ],
+        "confidence_score": 0.9,
+        "status": "verified",
+        "reasoning": "The candidate's claim is supported by a GitHub repository with a matching project name and description, as well as web search results that confirm the use of the claimed tech stack.",
+        "github_verified": true
+      },
+      {
+        "type": "project",
+        "name": "Orbital Debris and Satellite Detection (Computer Vision)",
+        "github_evidence": {
+          "repo_name": "orbital-debris-detection",
+          "description": "Orbital debris and satellite detection with YOLOv8 and OpenCV",
+          "languages": [
+            "Python"
+          ],
+          "stars": 0,
+          "last_updated": "2025-12-28T17:53:58Z",
+          "topics": [],
+          "match_confidence": "high",
+          "match_reasoning": "The repository name 'orbital-debris-detection' exactly matches the claimed project 'Orbital Debris and Satellite Detection' and its description mentions relevant technologies like YOLOv8 and OpenCV."
+        },
+        "web_evidence": [
+          {
+            "title": "Train Yolov8 objectdetectionon a custom dataset | Step by... - YouTube",
+            "snippet": "In this video I show you a super comprehensive step by step tutorial on how to use yolov8 to train an objectdetectoron your own custom dataset!Code: https",
+            "url": "https://www.youtube.com/watch?v=m9fH9OWn8YM"
+          },
+          {
+            "title": "OpenCV:OpenCV-PythonTutorials",
+            "snippet": "OpenCV-PythonTutorials. Introduction toOpenCV. Learn how to setupOpenCV-Pythonon yourcomputer! Gui Features inOpenCV. Here you will learn how to display and save images and videos, control mouse events and create trackbar. Core Operations.",
+            "url": "https://docs.opencv.org/4.x/d6/d00/tutorial_py_root.html"
+          },
+          {
+            "title": "GitHub-opencv/opencv-python: Automated CI toolchain to produce...",
+            "snippet": "Pythonbindings forOpenCVare developed in officialOpenCVrepository and it's the best place to report issues.The build process for a single entry in the build matrices is as follows (see for example .github/workflows/build_wheels_linux.yml file)",
+            "url": "https://github.com/opencv/opencv-python"
+          }
+        ],
+        "confidence_score": 0.9,
+        "status": "verified",
+        "reasoning": "The candidate's claim is supported by a GitHub repository with a matching project name and tech stack, which was recently updated and has a high match confidence.",
+        "github_verified": true
+      },
+      {
+        "type": "project",
+        "name": "AI-Driven Risk Prediction Framework (Final Year Project)",
+        "github_evidence": {
+          "repo_name": "ai-risk-prediction-framework",
+          "description": null,
+          "languages": [
+            "Python",
+            "Jupyter Notebook"
+          ],
+          "stars": 0,
+          "last_updated": "2026-04-05T14:54:48Z",
+          "topics": [],
+          "match_confidence": "high",
+          "match_reasoning": "The repository name 'ai-risk-prediction-framework' exactly matches the claimed project name 'AI-Driven Risk Prediction Framework'."
+        },
+        "web_evidence": [
+          {
+            "title": "Search_engine_project/vocabulary.txt at master - GitHub",
+            "snippet": "Enterprise platformAI-powered developer platform. AVAILABLE ADD-ONS. GitHub Advanced SecurityEnterprise-grade security features \u00b7 Copilot for BusinessEnterprise ...",
+            "url": "https://github.com/wang1128/Search_engine_project/blob/master/vocabulary.txt"
+          },
+          {
+            "title": "Rajat Rohilla - Data Scientist | Credit Risk & Fraud Detection - LinkedIn",
+            "snippet": "I built a TensorFlow logistic regression framework that cut fraudulent loan submissions by 79% through real-time scoring against historical default benchmarks.",
+            "url": "https://www.linkedin.com/in/rohillarajat"
+          },
+          {
+            "title": "Itr Brahma Valley Report Final Aayushi Shirsat (123) 2222 - Scribd",
+            "snippet": "Itr Brahma Valley Report Final Aayushi Shirsat (123)2222 - Free download as PDF File (.pdf), Text File (.txt) or read online for free.",
+            "url": "https://www.scribd.com/document/948162777/Itr-Brahma-Valley-Report-Final-Aayushi-Shirsat-123-2222"
+          }
+        ],
+        "confidence_score": 0.8,
+        "status": "verified",
+        "reasoning": "The GitHub repository found matches the project name and tech stack claimed by the candidate, with a high match confidence.",
+        "github_verified": true
+      }
+    ],
+    "audit": {
+      "hallucination_flags": [
+        "The candidate claims expertise in a wide range of skills, including 'supervised learning', 'NLP preprocessing', 'feature engineering', and 'model evaluation', which may be overly broad or vague.",
+        "The project 'AI-Driven Risk Prediction Framework' has a null description in the GitHub repository, which may indicate a lack of transparency or clarity about the project's goals and outcomes."
+      ],
+      "bias_flags": [
+        "The evaluation relies heavily on GitHub evidence, which may favor candidates with a strong online presence or open-source contributions, potentially introducing bias against candidates with limited online activity.",
+        "The web evidence for the 'AI-Driven Risk Prediction Framework' project appears to be unrelated to the project itself, which may indicate a lack of relevant information or a reliance on tangential sources."
+      ],
+      "credibility_score": 0.85,
+      "overall_assessment": "The candidate's claims are generally supported by the provided evidence, with a high confidence score for two of the three projects. However, the evaluation is not without potential biases and hallucinations, particularly with regards to the breadth of claimed skills and the lack of transparency in one of the project descriptions. While the candidate's credibility is relatively high, a more nuanced evaluation of their skills and experience may be necessary to fully assess their qualifications.",
+      "needs_reverification": false
+    },
+    "avg_confidence": 0.8666666666666667
+  }
+}

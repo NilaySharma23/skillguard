@@ -13,11 +13,6 @@ class JobStatus(str, Enum):
 
 
 class ScreeningRequest(BaseModel):
-    """
-    Pydantic validates incoming request data automatically.
-    If candidate_name is missing or files aren't uploaded,
-    FastAPI returns a 422 error before your code even runs.
-    """
     candidate_name: Optional[str] = None
 
 
@@ -48,3 +43,55 @@ class StatusResponse(BaseModel):
     status: JobStatus
     report: Optional[dict] = None
     error: Optional[str] = None
+
+
+# ── Batch models ────────────────────────────────────────────────
+
+class BatchResponse(BaseModel):
+    batch_id: str
+    job_ids: list[str]
+    status: str
+    message: str
+
+
+class BatchJobStatus(BaseModel):
+    job_id: str
+    status: JobStatus
+    report: Optional[dict] = None
+    error: Optional[str] = None
+
+
+class BatchStatusResponse(BaseModel):
+    batch_id: str
+    status: str  # processing | complete | partial
+    total: int
+    completed: int
+    jobs: list[BatchJobStatus]
+
+
+# ── Comparison models ───────────────────────────────────────────
+
+class ComparisonRequest(BaseModel):
+    report_a: dict
+    report_b: dict
+    jd_text: str
+
+
+class ComparisonCategory(BaseModel):
+    category: str
+    candidate_a_score: int
+    candidate_b_score: int
+    edge: str
+    reasoning: str
+
+
+class ComparisonReport(BaseModel):
+    candidate_a_name: str
+    candidate_b_name: str
+    winner: str
+    confidence: str
+    summary: str
+    categories: list[ComparisonCategory]
+    candidate_a_strengths: list[str]
+    candidate_b_strengths: list[str]
+    recommendation: str
