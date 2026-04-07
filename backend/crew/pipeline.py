@@ -10,14 +10,12 @@ from agents.claim_parser import parse_claims
 from agents.verifier import verify_claims
 from agents.critic import audit_claims
 from agents.reporter import generate_report
+from cache import resume_hash, get_cached, set_cache
 from dotenv import load_dotenv
 
 load_dotenv()
 
 
-# LangGraph requires a State class — this is the shared memory
-# that gets passed between every node in the graph.
-# Think of it as the "clipboard" all agents read from and write to.
 class ScreeningState(TypedDict):
     resume_text: str
     jd_text: str
@@ -25,7 +23,7 @@ class ScreeningState(TypedDict):
     verified_claims: dict
     audited_claims: dict
     final_report: dict
-    reverification_count: int  # prevents infinite loops
+    reverification_count: int
 
 
 def run_claim_parser(state: ScreeningState) -> ScreeningState:
@@ -64,8 +62,6 @@ def should_reverify(state: ScreeningState) -> str:
     avg_confidence = state["audited_claims"].get("avg_confidence", 1.0)
     count = state.get("reverification_count", 0)
 
-    # Only re-verify if critic explicitly flagged it AND confidence is very low
-    # AND we haven't already re-verified twice
     if needs_reverif and avg_confidence < 0.3 and count < 2:
         print(f"  [LangGraph] Very low confidence ({avg_confidence:.2f}) — re-verifying (attempt {count + 1})")
         state["reverification_count"] = count + 1
@@ -75,45 +71,60 @@ def should_reverify(state: ScreeningState) -> str:
 
 
 def build_pipeline():
-    """
-    Builds and compiles the LangGraph state machine.
-    
-    The graph looks like:
-    parser → verifier → critic → (conditional) → reporter → END
-                  ↑__________________________|
-                         (if low confidence)
-    """
     graph = StateGraph(ScreeningState)
-
-    # Add nodes (each is a function that takes + returns State)
     graph.add_node("parser", run_claim_parser)
     graph.add_node("verifier", run_verifier)
     graph.add_node("critic", run_critic)
     graph.add_node("reporter", run_reporter)
 
-    # Add edges (the flow between nodes)
     graph.set_entry_point("parser")
     graph.add_edge("parser", "verifier")
     graph.add_edge("verifier", "critic")
-
-    # Conditional edge — this is the self-correction loop
     graph.add_conditional_edges(
         "critic",
         should_reverify,
         {
-            "verifier": "verifier",  # loop back
-            "reporter": "reporter",  # proceed
+            "verifier": "verifier",
+            "reporter": "reporter",
         }
     )
     graph.add_edge("reporter", END)
+    return graph.compile()
 
+
+def build_cached_pipeline():
+    """Pipeline that starts from reporter (skips agents 1-3)."""
+    graph = StateGraph(ScreeningState)
+    graph.add_node("reporter", run_reporter)
+    graph.set_entry_point("reporter")
+    graph.add_edge("reporter", END)
     return graph.compile()
 
 
 def screen_candidate(resume_text: str, jd_text: str) -> dict:
     """Main entry point — run a single candidate through the full pipeline."""
-    pipeline = build_pipeline()
+    r_hash = resume_hash(resume_text)
+    cached = get_cached(r_hash)
 
+    if cached:
+        # Cache hit — skip agents 1-3, only run reporter with this JD
+        print("\nRunning SkillGuard pipeline (CACHED — skipping parse/verify/audit)...")
+        pipeline = build_cached_pipeline()
+        initial_state = ScreeningState(
+            resume_text=resume_text,
+            jd_text=jd_text,
+            parsed_claims=cached["parsed_claims"],
+            verified_claims=cached["verified_claims"],
+            audited_claims=cached["audited_claims"],
+            final_report={},
+            reverification_count=0,
+        )
+        final_state = pipeline.invoke(initial_state)
+        return final_state["final_report"]
+
+    # Cache miss — run full pipeline
+    print("\nRunning SkillGuard screening pipeline...")
+    pipeline = build_pipeline()
     initial_state = ScreeningState(
         resume_text=resume_text,
         jd_text=jd_text,
@@ -123,7 +134,13 @@ def screen_candidate(resume_text: str, jd_text: str) -> dict:
         final_report={},
         reverification_count=0,
     )
-
-    print("\nRunning SkillGuard screening pipeline...")
     final_state = pipeline.invoke(initial_state)
+
+    # Save to cache for next time
+    set_cache(r_hash, {
+        "parsed_claims": final_state["parsed_claims"],
+        "verified_claims": final_state["verified_claims"],
+        "audited_claims": final_state["audited_claims"],
+    })
+
     return final_state["final_report"]
