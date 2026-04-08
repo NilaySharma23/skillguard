@@ -3,8 +3,9 @@
 import os
 import json
 import hashlib
+import tempfile
 
-CACHE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".cache")
+CACHE_DIR = os.path.join(tempfile.gettempdir(), "skillguard_cache")
 
 
 def _ensure_dir():
