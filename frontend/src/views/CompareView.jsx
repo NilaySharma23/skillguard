@@ -162,44 +162,72 @@ export default function CompareView({ comparison, reportA, reportB, onBack }) {
 
       {/* ── Relative Strengths ───────────────────────── */}
       <div style={{
-        display: "grid", gridTemplateColumns: "1fr 1fr",
+        padding: "0 48px",
         borderBottom: `1px solid ${C.border}`,
       }}>
-        <div style={{ padding: "28px 32px", borderRight: `1px solid ${C.border}` }}>
-          <div className="mono" style={{ marginBottom: 14 }}>
-            {comparison.candidate_a_name}'s Strengths
+        <div style={{
+          display: "grid", gridTemplateColumns: "1fr 1fr",
+          gap: 16,
+          padding: "32px 0",
+        }}>
+          <div style={{
+            padding: "28px 48px",
+            background: C.bgPanel,
+            border: `1px solid ${C.border}`,
+            borderRadius: 10,
+          }}>
+            <div className="mono" style={{ marginBottom: 18, textAlign: "center" }}>
+              {comparison.candidate_a_name}'s Strengths
+            </div>
+            <ul style={{
+              listStyle: "none", display: "flex", flexDirection: "column", gap: 12,
+              alignItems: "center",
+            }}>
+              {comparison.candidate_a_strengths?.map((s, i) => (
+                <li key={i} style={{
+                  display: "flex", gap: 10, alignItems: "flex-start",
+                  maxWidth: 400,
+                }}>
+                  <div style={{
+                    width: 16, height: 16, borderRadius: 3, flexShrink: 0,
+                    background: C.greenDim, border: `1px solid ${C.green}`,
+                    display: "flex", alignItems: "center", justifyContent: "center",
+                    fontSize: 7, color: C.green, fontWeight: 800, marginTop: 2,
+                  }}>✓</div>
+                  <span style={{ fontSize: 13, color: C.inkMid, lineHeight: 1.5 }}>{s}</span>
+                </li>
+              ))}
+            </ul>
           </div>
-          <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: 10 }}>
-            {comparison.candidate_a_strengths?.map((s, i) => (
-              <li key={i} style={{ display: "flex", gap: 10, alignItems: "flex-start" }}>
-                <div style={{
-                  width: 16, height: 16, borderRadius: 3, flexShrink: 0,
-                  background: C.greenDim, border: `1px solid ${C.green}`,
-                  display: "flex", alignItems: "center", justifyContent: "center",
-                  fontSize: 7, color: C.green, fontWeight: 800, marginTop: 2,
-                }}>✓</div>
-                <span style={{ fontSize: 13, color: C.inkMid, lineHeight: 1.5, textAlign: "left" }}>{s}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div style={{ padding: "28px 32px" }}>
-          <div className="mono" style={{ marginBottom: 14 }}>
-            {comparison.candidate_b_name}'s Strengths
+          <div style={{
+            padding: "28px 48px",
+            background: C.bgPanel,
+            border: `1px solid ${C.border}`,
+            borderRadius: 10,
+          }}>
+            <div className="mono" style={{ marginBottom: 18, textAlign: "center" }}>
+              {comparison.candidate_b_name}'s Strengths
+            </div>
+            <ul style={{
+              listStyle: "none", display: "flex", flexDirection: "column", gap: 12,
+              alignItems: "center",
+            }}>
+              {comparison.candidate_b_strengths?.map((s, i) => (
+                <li key={i} style={{
+                  display: "flex", gap: 10, alignItems: "flex-start",
+                  maxWidth: 400,
+                }}>
+                  <div style={{
+                    width: 16, height: 16, borderRadius: 3, flexShrink: 0,
+                    background: C.greenDim, border: `1px solid ${C.green}`,
+                    display: "flex", alignItems: "center", justifyContent: "center",
+                    fontSize: 7, color: C.green, fontWeight: 800, marginTop: 2,
+                  }}>✓</div>
+                  <span style={{ fontSize: 13, color: C.inkMid, lineHeight: 1.5 }}>{s}</span>
+                </li>
+              ))}
+            </ul>
           </div>
-          <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: 10 }}>
-            {comparison.candidate_b_strengths?.map((s, i) => (
-              <li key={i} style={{ display: "flex", gap: 10, alignItems: "flex-start" }}>
-                <div style={{
-                  width: 16, height: 16, borderRadius: 3, flexShrink: 0,
-                  background: C.greenDim, border: `1px solid ${C.green}`,
-                  display: "flex", alignItems: "center", justifyContent: "center",
-                  fontSize: 7, color: C.green, fontWeight: 800, marginTop: 2,
-                }}>✓</div>
-                <span style={{ fontSize: 13, color: C.inkMid, lineHeight: 1.5, textAlign: "left" }}>{s}</span>
-              </li>
-            ))}
-          </ul>
         </div>
       </div>
 
