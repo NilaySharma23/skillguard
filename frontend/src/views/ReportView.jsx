@@ -2,6 +2,21 @@ import ScoreRing from "../components/ScoreRing"
 import HireBadge from "../components/HireBadge"
 import { C } from "../constants/tokens"
 
+// Maps each interview-question category to a label + accent color so the
+// hiring manager can see at a glance what kind of probe each question is.
+const CATEGORY_META = {
+  claim_verification: { label: "Claim Check",      color: C.accent },
+  problem_solving:    { label: "Problem Solving",  color: C.amber  },
+  critical_thinking:  { label: "Critical Thinking",color: C.amber  },
+  adaptability:       { label: "Adaptability",     color: C.accent },
+  domain_knowledge:   { label: "Domain Depth",     color: C.accent },
+  education:          { label: "Education",         color: C.inkMid },
+}
+
+function categoryMeta(cat) {
+  return CATEGORY_META[cat] || { label: cat || "Targets", color: C.accent }
+}
+
 function StatCell({ label, value, accent, noBorder }) {
   return (
     <div style={{
@@ -167,30 +182,105 @@ export default function ReportView({ report, onReset, onBack }) {
             padding: "28px 28px",
           }}>
             <SectionHeading>Interview Questions</SectionHeading>
-            {report.recommended_interview_questions?.map((q, i) => (
-              <div key={i} className="iq-row">
-                <span style={{
-                  fontFamily: "'IBM Plex Mono', monospace",
-                  fontSize: 10, color: C.inkDim,
-                  paddingTop: 3, flexShrink: 0, minWidth: 24,
-                }}>{String(i + 1).padStart(2, "0")}</span>
-                <div style={{ flex: 1 }}>
-                  <p style={{ fontSize: 13, color: C.ink, lineHeight: 1.7, marginBottom: 10, textAlign: "left" }}>
-                    {q.question}
-                  </p>
+            {report.recommended_interview_questions?.map((q, i) => {
+              const meta = categoryMeta(q.category)
+              return (
+                <div key={i} className="iq-row">
                   <span style={{
                     fontFamily: "'IBM Plex Mono', monospace",
-                    fontSize: 9, letterSpacing: "0.06em", textTransform: "uppercase",
-                    color: C.accent, background: C.accentDim,
-                    border: `1px solid ${C.accent}`,
-                    padding: "3px 9px", borderRadius: 4, display: "inline-block",
-                  }}>{q.targets}</span>
+                    fontSize: 10, color: C.inkDim,
+                    paddingTop: 3, flexShrink: 0, minWidth: 24,
+                  }}>{String(i + 1).padStart(2, "0")}</span>
+                  <div style={{ flex: 1 }}>
+                    <p style={{ fontSize: 13, color: C.ink, lineHeight: 1.7, marginBottom: 10, textAlign: "left" }}>
+                      {q.question}
+                    </p>
+                    <div style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
+                      <span style={{
+                        fontFamily: "'IBM Plex Mono', monospace",
+                        fontSize: 9, letterSpacing: "0.06em", textTransform: "uppercase",
+                        color: meta.color, background: `${meta.color}1A`,
+                        border: `1px solid ${meta.color}`,
+                        padding: "3px 9px", borderRadius: 4, display: "inline-block",
+                      }}>{meta.label}</span>
+                      {q.targets && (
+                        <span style={{ fontSize: 11, color: C.inkDim, textAlign: "left" }}>
+                          {q.targets}
+                        </span>
+                      )}
+                    </div>
+                  </div>
                 </div>
-              </div>
-            ))}
+              )
+            })}
           </div>
         </div>
       </div>
+
+      {/* ── Experience & Adaptability + Education ───── */}
+      {(report.experience_assessment || report.education) && (
+        <div style={{ padding: "0 32px", borderBottom: `1px solid ${C.border}` }}>
+          <div style={{
+            display: "grid",
+            gridTemplateColumns: report.experience_assessment && report.education ? "1.4fr 1fr" : "1fr",
+            gap: 12, paddingTop: 12, paddingBottom: 12,
+          }}>
+
+            {/* Experience & Adaptability */}
+            {report.experience_assessment && (
+              <div style={{ border: `1px solid ${C.border}`, borderRadius: 10, padding: "28px 28px" }}>
+                <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", gap: 12 }}>
+                  <SectionHeading>Experience &amp; Adaptability</SectionHeading>
+                  <span style={{
+                    fontFamily: "'Syne', sans-serif", fontSize: 22, fontWeight: 800,
+                    color: C.accent, lineHeight: 1, flexShrink: 0,
+                  }}>{report.experience_assessment.score}<span style={{ fontSize: 12, color: C.inkDim }}>/100</span></span>
+                </div>
+
+                {report.experience_assessment.environments?.length > 0 && (
+                  <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginBottom: 16 }}>
+                    {report.experience_assessment.environments.map((env, i) => (
+                      <span key={i} style={{
+                        fontFamily: "'IBM Plex Mono', monospace",
+                        fontSize: 10, letterSpacing: "0.04em",
+                        color: C.inkMid, background: C.bgInput,
+                        border: `1px solid ${C.border}`,
+                        padding: "4px 10px", borderRadius: 4,
+                      }}>{env}</span>
+                    ))}
+                  </div>
+                )}
+
+                {report.experience_assessment.adaptability && (
+                  <p style={{ fontSize: 13, color: C.ink, lineHeight: 1.7, marginBottom: 10, textAlign: "left" }}>
+                    {report.experience_assessment.adaptability}
+                  </p>
+                )}
+                {report.experience_assessment.reasoning && (
+                  <p style={{ fontSize: 12, color: C.inkMid, lineHeight: 1.75, textAlign: "left" }}>
+                    {report.experience_assessment.reasoning}
+                  </p>
+                )}
+              </div>
+            )}
+
+            {/* Education */}
+            {report.education && (
+              <div style={{ border: `1px solid ${C.border}`, borderRadius: 10, padding: "28px 28px" }}>
+                <SectionHeading>Education</SectionHeading>
+                <p style={{ fontSize: 13, color: C.ink, lineHeight: 1.6, marginBottom: 10, textAlign: "left" }}>
+                  {report.education.summary}
+                </p>
+                {report.education.relevance && (
+                  <p style={{ fontSize: 12, color: C.inkMid, lineHeight: 1.75, textAlign: "left" }}>
+                    {report.education.relevance}
+                  </p>
+                )}
+              </div>
+            )}
+          </div>
+        </div>
+      )}
 
       {/* ── Footer — full bleed ─────────────────────── */}
       <div style={{ padding: "24px 40px", display: "flex", gap: 12 }}>

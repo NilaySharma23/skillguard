@@ -19,6 +19,8 @@ Return ONLY valid JSON in exactly this format, nothing else:
       "company": "string",
       "role": "string",
       "duration": "string",
+      "location": "city/country if mentioned, else null",
+      "company_context": "infer the work environment from the resume if discernible: e.g. 'early-stage startup', 'seed-funded startup', 'large enterprise', 'MNC', 'founder / own venture', 'agency', 'research lab'. Use 'unknown' if it cannot be inferred.",
       "claims": ["specific achievement or responsibility"]
     }}
   ],
