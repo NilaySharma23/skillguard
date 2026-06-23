@@ -18,7 +18,22 @@ class ScreeningRequest(BaseModel):
 
 class InterviewQuestion(BaseModel):
     question: str
+    # claim_verification | problem_solving | critical_thinking |
+    # adaptability | domain_knowledge | education
+    category: Optional[str] = "claim_verification"
     targets: str
+
+
+class ExperienceAssessment(BaseModel):
+    score: int
+    environments: list[str]
+    adaptability: str
+    reasoning: str
+
+
+class EducationInfo(BaseModel):
+    summary: str
+    relevance: str
 
 
 class ScreeningReport(BaseModel):
@@ -27,6 +42,8 @@ class ScreeningReport(BaseModel):
     match_reasoning: str
     verified_strengths: list[str]
     risk_flags: list[str]
+    experience_assessment: Optional[ExperienceAssessment] = None
+    education: Optional[EducationInfo] = None
     recommended_interview_questions: list[InterviewQuestion]
     hiring_recommendation: str
     summary: str
