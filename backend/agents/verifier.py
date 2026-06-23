@@ -69,7 +69,11 @@ Return ONLY valid JSON:
 }}"""
 
         text = generate(prompt)
-        match = parse_json_response(text)
+        try:
+            match = parse_json_response(text)
+        except Exception as e:
+            print(f"  Repo-match parse failed: {e}")
+            return None
         matched_name = match.get("matched_repo")
 
         if not matched_name or matched_name == "null":
@@ -171,7 +175,18 @@ Return ONLY valid JSON:
 }}"""
 
         text = generate(prompt)
-        result = parse_json_response(text)
+        try:
+            result = parse_json_response(text)
+        except Exception as e:
+            # One unparseable project shouldn't sink the whole candidate —
+            # mark it unverified and move on.
+            print(f"  Verification parse failed for '{project_name}': {e}")
+            result = {
+                "confidence_score": 0.5,
+                "status": "unverified",
+                "reasoning": "Verification result could not be parsed.",
+                "github_verified": False,
+            }
 
         verified["verification_results"].append({
             "type": "project",

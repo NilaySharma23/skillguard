@@ -9,3 +9,7 @@ chroma_db/
 frontend/node_modules/
 frontend/dist/
 backend/chroma_db/
+
+# Runtime resume cache — contains parsed candidate PII, must never be committed
+.cache/
+backend/.cache/
