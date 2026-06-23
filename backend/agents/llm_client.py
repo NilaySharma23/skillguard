@@ -89,11 +89,30 @@ def generate_with_fallback(prompt: str) -> str:
 def parse_json_response(text: str) -> dict:
     """
     Strips markdown code fences and parses JSON.
-    Handles the common LLM habit of wrapping JSON in ```json blocks.
+    Handles the common LLM habit of wrapping JSON in ```json blocks, and
+    falls back to extracting the first {...} block when the model adds prose
+    around the JSON. Raises ValueError if nothing parseable is found so
+    callers can apply a sane default instead of crashing on a bare
+    JSONDecodeError.
     """
+    if not text:
+        raise ValueError("Empty LLM response — no JSON to parse")
+
     text = text.strip()
     if text.startswith("```"):
         lines = text.split("\n")
         # Remove first line (```json) and last line (```)
-        text = "\n".join(lines[1:-1])
-    return json.loads(text.strip())
+        text = "\n".join(lines[1:-1]).strip()
+
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError:
+        # Fallback: grab the outermost {...} block and try again
+        start = text.find("{")
+        end = text.rfind("}")
+        if start != -1 and end != -1 and end > start:
+            try:
+                return json.loads(text[start:end + 1])
+            except json.JSONDecodeError:
+                pass
+        raise ValueError(f"No valid JSON found in LLM response: {text[:200]}")

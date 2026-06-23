@@ -35,7 +35,14 @@ def run_claim_parser(state: ScreeningState) -> ScreeningState:
 
 
 def run_verifier(state: ScreeningState) -> ScreeningState:
-    print("  [Agent 2] Verifying claims against web...")
+    # Count every verification pass here, inside the node. Doing this in the
+    # conditional-edge router (should_reverify) does NOT persist — LangGraph
+    # only merges state returned from nodes, so the counter stayed 0 forever
+    # and a genuinely low-confidence candidate looped until recursion_limit.
+    state["reverification_count"] = state.get("reverification_count", 0) + 1
+    pass_num = state["reverification_count"]
+    label = "Verifying" if pass_num == 1 else f"Re-verifying (pass {pass_num})"
+    print(f"  [Agent 2] {label} claims against web...")
     state["verified_claims"] = verify_claims(state["parsed_claims"])
     return state
 
@@ -58,13 +65,16 @@ def run_reporter(state: ScreeningState) -> ScreeningState:
 
 
 def should_reverify(state: ScreeningState) -> str:
+    # Pure router: only reads state, never mutates it (mutations here are
+    # discarded by LangGraph). The counter is incremented in run_verifier.
+    # count == number of verification passes already done. The initial pass
+    # makes it 1, so allowing count < 3 caps re-verification at 2 extra passes.
     needs_reverif = state["audited_claims"].get("audit", {}).get("needs_reverification", False)
     avg_confidence = state["audited_claims"].get("avg_confidence", 1.0)
     count = state.get("reverification_count", 0)
 
-    if needs_reverif and avg_confidence < 0.3 and count < 2:
-        print(f"  [LangGraph] Very low confidence ({avg_confidence:.2f}) — re-verifying (attempt {count + 1})")
-        state["reverification_count"] = count + 1
+    if needs_reverif and avg_confidence < 0.3 and count < 3:
+        print(f"  [LangGraph] Very low confidence ({avg_confidence:.2f}) — re-verifying (pass {count + 1})")
         return "verifier"
     else:
         return "reporter"

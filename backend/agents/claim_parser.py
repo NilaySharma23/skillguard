@@ -37,4 +37,18 @@ Return ONLY valid JSON in exactly this format, nothing else:
 }}"""
 
     text = generate(prompt)
-    return parse_json_response(text)
+    try:
+        return parse_json_response(text)
+    except Exception as e:
+        # Never crash the whole pipeline on a malformed parse — return a
+        # minimal, well-formed structure so downstream agents can proceed.
+        print(f"  [Agent 1] Claim parsing failed to produce valid JSON: {e}")
+        return {
+            "candidate_name": "Unknown",
+            "github_username": None,
+            "github_url": None,
+            "skills": [],
+            "experience": [],
+            "projects": [],
+            "education": {},
+        }
